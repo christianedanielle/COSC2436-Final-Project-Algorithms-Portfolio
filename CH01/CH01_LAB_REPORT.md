@@ -15,18 +15,20 @@ Binary Search: O(log n)
 [Paste your program output, measurement table, or sample run.
  Use a Markdown table where appropriate.]
 
-Input	            Result             	Notes
-----------------|-------------------|----------------------------------------|
-Search 1	       |Found at index 0	   |Fast for both, binary slightly faster
-Search 64       |	Found at index 63	|Linear takes longer as it scans halfway
-Search 128      |	Found at index 127|	Worst case for linear search
-Search 50	      |Found at index 49	 |Binary significantly faster
-Search 100     	|Found at index 99 	|Binary much fewer steps
-Search 25       |	Found at index 24	|Linear quicker due to early position
-Search 75       |	Found at index 74	|Binary still faster overall
-Search 10	      |Found at index 9  	|Linear relatively quick
-Search 90       |	Found at index 89 |	Binary faster due to halving
-Search 200     	|Not found	          |Linear checks all, binary exits quickly         
+## Test Results
+
+| Input        | Result            | Notes |
+|-------------|------------------|------|
+| Search 1    | Found at index 0  | Fast for both, binary slightly faster |
+| Search 64   | Found at index 63 | Linear takes longer as it scans halfway |
+| Search 128  | Found at index 127| Worst case for linear search |
+| Search 50   | Found at index 49 | Binary significantly faster |
+| Search 100  | Found at index 99 | Binary uses much fewer steps |
+| Search 25   | Found at index 24 | Linear quicker due to early position |
+| Search 75   | Found at index 74 | Binary still faster overall |
+| Search 10   | Found at index 9  | Linear relatively quick |
+| Search 90   | Found at index 89 | Binary faster due to halving |
+| Search 200  | Not found         | Linear checks all; binary exits quickly |        
 
 
 ## Reflection Questions
