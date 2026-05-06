@@ -1,37 +1,60 @@
-# Chapter 03 :[ Recursion] — Lab Report
+# Lab 3: Recursion
 
 ## Student Information
 - **Name:** [christiane Danielle Sidje]
 - **Date:** [02/12/2026]
 - **Course:** COSC 2436
+## Recursion Concepts
 
-## Algorithm Summary
-- **How it works:**These recursive functions solve problems by breaking them into smaller versions of the same problem. Each function continues calling itself with a reduced input until it reaches a simple base case that stops the recursion.
-- **Time complexity:** countdown: O(n)
-fact: O(n)
-recursive_sum: O(n²) (due to list slicing)
-recursive_count: O(n²) (due to slicing)
-recursive_max: O(n²) (due to slicing)
-- **When to use it:** Recursion is best used when a problem can naturally be broken into smaller identical subproblems, such as mathematical calculations (factorials), processing lists, or exploring hierarchical structures like trees.
+### Two Parts of Every Recursive Function
+1. Base Case: The condition that stops the recursion. It provides a direct answer without making another recursive call. Without it, the function would run forever.
 
-## Test Results
-| Input                      | Result  | Notes                    |
-| -------------------------- | ------- | ------------------------ |
-| countdown(3)               | 3 2 1 0 | Prints correct countdown |
-| fact(5)                    | 120     | Correct factorial result |
-| recursive_sum([1,2,3])     | 6       | Correct sum              |
-| recursive_count([1,2,3,4]) | 4       | Correct element count    |
-| recursive_max([3,1,7,2])   | 7       | Correct maximum value    |
+2. Recursive Case: The part of the function where it calls itself with a smaller version of the problem until it eventually reaches the base case.
 
+### The Call Stack
+The call stack is a memory structure that keeps track of function calls. In recursion, each function call is placed on top of the stack and waits for the next call to finish. Once the base case is reached, the stack unwinds and returns values step by step.
+
+Example using fact(4):
+
+fact(4)
+→ fact(3)
+→ fact(2)
+→ fact(1)
+→ 1
+
+Unwinding:
+fact(1) = 1
+fact(2) = 2 × 1 = 2
+fact(3) = 3 × 2 = 6
+fact(4) = 4 × 6 = 24
+
+## Function Analysis
+
+Function         | Base Case     | Recursive Case                     | Time Complexity
+----------------|--------------|-------------------------------------|----------------
+countdown       | i <= 0        | countdown(i - 1)                   | O(n)
+fact            | x <= 1        | x * fact(x - 1)                   | O(n)
+recursive_sum   | empty list    | first + recursive_sum(rest)       | O(n^2)
+recursive_count | empty list    | 1 + recursive_count(rest)         | O(n^2)
+recursive_max   | single item   | max(first, recursive_max(rest))   | O(n^2)
 
 ## Reflection Questions
-1.What is a base case and why is it important?
-A base case is the condition that stops recursion. Without it, the function would call itself forever and cause a stack overflow.
 
-2.Why is recursion sometimes inefficient in Python?
-Recursion can be inefficient because each function call adds overhead to the call stack, and operations like list slicing create additional memory usage.
+1. What happens if you forget the base case?
+The function will keep calling itself forever until the program crashes due to a stack overflow error.
 
-3.How could recursive_sum or recursive_max be improved?
-They could be improved by passing an index instead of slicing the list, which would reduce time complexity from O(n²) to O(n).
-## Challenges Encountered
-The main challenge was understanding how list slicing inside recursion increases time complexity. While the logic is simple, each slice creates a new list, which makes the functions less efficient. This was resolved by analyzing how data is copied at each recursive step and recognizing more efficient alternatives like index-based recursion.
+2. Why is the naive Fibonacci implementation inefficient?
+It recalculates the same values many times, leading to exponential time complexity O(2^n).
+
+3. Draw the call stack for fact(4).
+
+fact(4)
+fact(3)
+fact(2)
+fact(1)
+
+Then returns:
+fact(1)=1
+fact(2)=2
+fact(3)=6
+fact(4)=24atives like index-based recursion.
