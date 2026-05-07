@@ -1,4 +1,4 @@
-# Hash Table Lab Report
+#Lab 05: Hash Table 
 
 ## Student Information
 - Name: Christiane Danielle Sidje
