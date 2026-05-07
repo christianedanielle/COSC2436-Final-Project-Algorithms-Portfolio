@@ -1,4 +1,3 @@
-"""
 Lab 6: Main Program
 Demonstrates BFS on Texas road network.
 """
