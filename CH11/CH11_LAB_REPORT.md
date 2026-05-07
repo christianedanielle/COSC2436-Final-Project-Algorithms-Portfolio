@@ -1,4 +1,4 @@
-# Chapter 11: [Knapsack Dynamic Programming] — Lab Report
+# Chapter 11: Knapsack Dynamic Programming — Lab Report
 
 ## Student Information
 - **Name:** Christiane Danielle Sidje
