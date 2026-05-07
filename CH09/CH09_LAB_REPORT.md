@@ -1,48 +1,32 @@
-Lab Report 09: Djikstra
-Student Information
+# Chapter 09: Djikstra — Lab Report 
 
-Name: [Christiane Danielle]
-Date: [09/04/26]
-Algorithm Analysis: Dijkstra's Algorithm
+## Student Information
+- **Name:** Christiane Danielle
+- **Date:** May 7, 2026
+- **Course:** COSC 2436
 
-What type of graph does this program build? [Your answer — directed/undirected, weighted/unweighted]
-Why must all edge weights be non-negative for Dijkstra's to work? [Your explanation]
-Time Complexity (with simple array scan for min-node): O(?)
-Time Complexity (with a min-heap/priority queue): O(?)
-Core Data Structures
+## Algorithm Summary
+- **How it works:** Dijkstra’s Algorithm finds the shortest path between nodes in a weighted graph with non-negative edge weights. It repeatedly selects the unprocessed node with the smallest known cost and updates the costs of neighboring nodes if a shorter path is found.
+- **Time complexity:** O(V²) using a linear scan, or O((V + E) log V) using a priority queue.
+- **When to use it:** This algorithm is useful for shortest-path problems such as GPS navigation, network routing, and game pathfinding.
 
-Structure	Variable Name	What It Stores
-Adjacency dict	graph	
-Cost table	costs	
-Parent table	parents	
-Visited list	processed	
-Algorithm Trace
+## Test Results
 
-Given nodes A, B, C, D and edges A-B(1), A-C(4), B-C(2), B-D(6), C-D(3), trace Dijkstra's from A to D:
+| Input | Result | Notes |
+|---|---|---|
+| A-B(1), A-C(4), B-C(2), B-D(6), C-D(3) | A → B → C → D | Shortest path from A to D |
+| Start: A, End: D | Total Cost = 6 | Weighted undirected graph |
 
-Iteration	Current Node	costs[A]	costs[B]	costs[C]	costs[D]	processed
-Init	—					
-1						
-2						
-3						
-4						
-Shortest path A to D: [Your answer]
-Total cost: [Your answer]
+## Reflection Questions
 
-Reflection Questions
+1. **Why must all edge weights be non-negative in Dijkstra’s Algorithm?**  
+   Dijkstra’s Algorithm assumes that once the shortest path to a node is finalized, it will not change later. Negative edge weights can create shorter paths afterward, causing incorrect results.
 
-Why does the algorithm initialize all node costs to infinity except the start node?  
- Dijkstra’s algorithm initializes all node costs to infinity to represent that no paths to those nodes are known yet, while the start node is set to 0 because it costs nothing to begin there. This ensures that any real path discovered during the algorithm will be smaller than infinity, allowing the algorithm to correctly update and track the shortest distances as it explores the graph.
+2. **Why are edges stored in both directions in this program?**  
+   The graph is undirected, so travel between connected nodes must work both ways. Storing edges in both directions ensures the algorithm can correctly explore all possible paths.
 
-Why do we store edges in both directions (graph[a][b] and graph[b][a])? What would break if we only stored one direction?  
-We store edges in both directions because the graph is undirected, meaning you can travel between nodes both ways; storing graph[a][b] and graph[b][a] ensures the algorithm can move freely in either direction. If we only stored one direction, the graph would effectively become directed, and Dijkstra’s algorithm might fail to find valid paths—for example, it could get stuck or miss a shorter route simply because the reverse connection wasn’t recorded.
+3. **How does the parents dictionary help reconstruct the shortest path?**  
+   The `parents` dictionary stores the previous node used to reach each node on the shortest path. By tracing backward from the destination node to the start node, the full path can be rebuilt and then reversed into the correct order.
 
-The find_lowest_cost_node() function scans all nodes linearly. How would using a priority queue (min-heap) improve performance, and why does it matter for large graphs?
-Using a priority queue (min-heap) makes the algorithm faster because instead of checking every node to find the smallest cost, it automatically gives you the smallest one in logarithmic time. Right now, the program scans all nodes every time, which is slow for big graphs. With a heap, the overall time is much better, so it can handle large graphs more efficiently without taking too long.
-
-If a negative edge weight were introduced (e.g., A-B with weight -3), explain how Dijkstra's algorithm could produce an incorrect result. What algorithm handles negative weights? 
-If a negative edge weight were introduced (e.g., A-B with weight -3), explain how Dijkstra's algorithm could produce an incorrect result. What algorithm handles negative weights? 
-
-How does the parents dictionary allow path reconstruction? Why do we reverse the path at the end?
-If a negative edge weight is introduced, Dijkstra’s algorithm can give the wrong result because it assumes that once a node with the lowest cost is chosen, its cost is final. However, a negative edge could later create a shorter path to that same node, but the algorithm won’t revisit it to update the cost. This leads to incorrect results. The algorithm that can handle negative weights is the Bellman-Ford algorithm.
-What happens when the source and destination are in disconnected components of the graph? How does the code detect this?  If the source and destination are in different disconnected parts of the graph, no path exists between them. The code detects this because the destination’s cost stays at infinity after running Dijkstra’s algorithm, so it returns None to show that no route was found.
+## Challenges Encountered
+One challenge was understanding how node costs update during each iteration of the algorithm. Tracing the algorithm step by step with a small graph helped make the process clearer. Another challenge was handling invalid input and preventing negative edge weights, which required additional input validation in the program.ning Dijkstra’s algorithm, so it returns None to show that no route was found.
