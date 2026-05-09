@@ -1,7 +1,7 @@
-LAB REPORT 07 : Binary Trees
+## Lab 07 : Binary Trees -Lab Report
 
-Student Information
-------------------------------------------------------------
+**Student Information**
+
 Name: Christiane Danielle
 
 Date: 03/29/2026
@@ -41,23 +41,20 @@ Search in empty tree → False
 Reflection Questions
 ------------------------------------------------------------
 
-1. Why does inorder traversal give sorted output?
+**1. Why does inorder traversal give sorted output?**
 Because in a BST, left nodes are smaller and right nodes are larger.
 Inorder traversal visits left → root → right, producing sorted order.
 
-2. When does a BST become unbalanced?
+**2. When does a BST become unbalanced?**
 A BST becomes unbalanced when values are inserted in sorted or nearly sorted order,
 causing the tree to behave like a linked list.
 
-3. What is the difference between BFS and DFS?
+**3. What is the difference between BFS and DFS?**
 BFS explores level by level using a queue, while DFS explores as deep as possible
 before backtracking using recursion or a stack.
 
 ------------------------------------------------------------
-Challenges Encountered
-------------------------------------------------------------
-
+## Challenges Encountered
 The main challenge was understanding how recursion works in insertion and search.
 It was also difficult at first to visualize how the tree changes after each insertion,
-but testing small examples helped clarify the behavior.
-------------------------------------------------------------
+but testing small examples helped clarify the behavior
