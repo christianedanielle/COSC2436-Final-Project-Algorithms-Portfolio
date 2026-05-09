@@ -1,6 +1,6 @@
 # Chapter 02: Selection Sort — Lab Report
  **Name:** Christiane Danielle
-- **Date:** 02-05-2026
+- **Date:** 02/05/2026
 
 ### Algorithm Analysis
 
