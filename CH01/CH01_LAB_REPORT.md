@@ -1,4 +1,4 @@
-Chapter 1: [Binary Search] — Lab Report
+## Chapter 1: Binary Search — Lab Report
 
 ## Student Information
 - **Name:** [Christiane Danielle]
