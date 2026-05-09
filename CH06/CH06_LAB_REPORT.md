@@ -1,4 +1,4 @@
-# Lab 6: Breadth-First Search
+# Lab 06: Breadth-First Search - Lab Report
 
 ## Student Information
 - Name: Christiane Danielle Sidje
