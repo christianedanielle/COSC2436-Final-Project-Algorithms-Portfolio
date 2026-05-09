@@ -1,8 +1,8 @@
 #  Chapter 03 Recursion — Lab Report 
 
 ## Student Information
-- **Name:** [christiane Danielle Sidje]
-- **Date:** [02/12/2026]
+- **Name:** christiane Danielle Sidje
+- **Date:** 02/12/2026
 - **Course:** COSC 2436
 ## Recursion Concepts
 
