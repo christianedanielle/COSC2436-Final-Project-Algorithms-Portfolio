@@ -1,4 +1,4 @@
-LAB REPORT 08: Balanced Trees
+## Lab 08: Balanced Trees -Lab Report
 
 ------------------------------------------------------------
 Student Information
@@ -45,23 +45,20 @@ Observations:
 Reflection Questions
 ------------------------------------------------------------
 
-1. Why does an AVL tree need to maintain balance?
+**1. Why does an AVL tree need to maintain balance?**
 To ensure operations such as search, insert, and delete stay efficient
 at O(log n) instead of degrading to O(n) like a linked list.
 
-2. What triggers a rotation in an AVL tree?
+**2. What triggers a rotation in an AVL tree?**
 A rotation is triggered when the balance factor of a node becomes less
 than -1 or greater than 1 after insertion.
 
-3. How does AVL tree insertion differ from a normal BST?
+**3. How does AVL tree insertion differ from a normal BST?**
 AVL insertion includes additional steps to check balance factors and
 perform rotations if needed, while a normal BST does not rebalance.
 
 ------------------------------------------------------------
-Challenges Encountered
-------------------------------------------------------------
-
+## Challenges Encountered
 The main difficulty was understanding how rotations (LL, RR, LR, RL)
 fix different imbalance cases while still preserving the BST property.
 Tracing each insertion step-by-step helped clarify how balance is restored.
-------------------------------------------------------------
