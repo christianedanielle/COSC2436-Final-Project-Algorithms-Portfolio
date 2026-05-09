@@ -2,7 +2,7 @@
 
 ## Student Information
 - **Name:** Christiane Danielle Sidje
-- **Date:** May 7, 2026
+- **Date:** 05/07/2026
 - **Course:** COSC 2436
 
 ## Algorithm Summary
