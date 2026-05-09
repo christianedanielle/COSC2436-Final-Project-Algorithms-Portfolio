@@ -2,6 +2,7 @@
 ## Student Information
 **Name:** Christiane Danielle  
 **Date:** 04/19/2026
+
 **Algorithm Analysis:** Greedy Truck Packing Algorithm  
 
 ---
