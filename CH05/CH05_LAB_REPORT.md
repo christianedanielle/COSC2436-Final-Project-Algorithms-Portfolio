@@ -1,4 +1,4 @@
-#Lab 05: Hash Table 
+## Lab 05: Hash Table - Lab Report
 
 ## Student Information
 - Name: Christiane Danielle Sidje
@@ -8,13 +8,13 @@
 
 # Key Concepts
 
-## What is a Hash Table?
+**What is a Hash Table?**
 
 A hash table stores data using key-value pairs.
 
 A hash function converts a key into an index in an array.
 
-Example:
+**Example:**
 
 hash("apple") = 2
 
@@ -24,7 +24,7 @@ Hash tables are efficient because insert and search operations are usually O(1).
 
 ---
 
-## What is Linear Probing?
+**What is Linear Probing?**
 
 Linear probing is a collision handling method.
 
@@ -32,7 +32,7 @@ If two keys hash to the same index:
 1. Check the next index
 2. Continue until an empty spot is found
 
-Example:
+**Example:**
 
 "apple" -> index 2  
 "banana" -> index 2
@@ -110,14 +110,14 @@ Worst case is O(n) when many collisions happen.
 
 # Reflection Questions
 
-## 1. What are the advantages of using a hash table?
+**1. What are the advantages of using a hash table?**
 
 - Fast insertion
 - Fast searching
 - Efficient storage
 - Useful for dictionaries and databases
 
-## 2. How does the hash function affect performance?
+**2. How does the hash function affect performance?**
 
 A good hash function spreads data evenly across the table.
 
@@ -126,10 +126,14 @@ This reduces collisions and improves speed.
 A bad hash function creates many collisions and slows down operations.
 
 
-## 3. What are other collision resolution techniques besides linear probing?
+**3. What are other collision resolution techniques besides linear probing?**
 
 - Quadratic probing
 - Double hashing
 - Separate chaining
+
+  ## Challenges Encountered
+
+One challenge in this lab was understanding how collisions affect the behavior of a hash table, especially when multiple keys map to the same index. Tracing linear probing step by step helped clarify how the algorithm searches for the next available slot, but it was important to carefully track each index to avoid placement errors. Another challenge was recognizing how the quality of the hash function impacts performance, since poor distribution can quickly lead to clustering and slower search and insert operations.
 
 
