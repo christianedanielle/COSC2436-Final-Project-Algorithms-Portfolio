@@ -1,7 +1,7 @@
 #  Chap 10: Truck Packing - Lab Report
 ## Student Information
-**Name:** [Christiane Danielle]  
-**Date:** [04/19/2026]  
+**Name:** Christiane Danielle  
+**Date:** 04/19/2026
 **Algorithm Analysis:** Greedy Truck Packing Algorithm  
 
 ---
