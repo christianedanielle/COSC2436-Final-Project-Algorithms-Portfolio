@@ -1,8 +1,8 @@
 ## Chapter 1: Binary Search — Lab Report
 
 ## Student Information
-- **Name:** [Christiane Danielle]
-- **Date:** [06/05/2026] 
+- **Name:** Christiane Danielle
+- **Date:** 06/05/2026 
 - **Course:** COSC 2436
 
 ## Algorithm Summary
