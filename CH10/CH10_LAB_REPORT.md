@@ -1,4 +1,4 @@
-# Lab Report Chap 10: Truck Packing
+#  Chap 10: Truck Packing - Lab Report
 ## Student Information
 **Name:** [Christiane Danielle]  
 **Date:** [04/19/2026]  
