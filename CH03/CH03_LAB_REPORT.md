@@ -59,6 +59,6 @@ fact(2)=2
 fact(3)=6
 fact(4)=24atives like index-based recursion.
 
-## challenges Encountered
+## Challenges Encountered
 
 One challenge in this lab was understanding how recursive functions repeatedly call themselves and how the program keeps track of those calls using the call stack. Tracing each recursive step carefully was important to avoid confusion about when functions stop and begin returning values. Another challenge was identifying proper base cases, since forgetting or incorrectly defining them can cause infinite recursion and program crashes. Practicing with examples like factorial and recursive list operations helped improve my understanding of how recursion breaks large problems into smaller ones
