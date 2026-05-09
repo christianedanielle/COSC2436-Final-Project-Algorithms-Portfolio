@@ -32,6 +32,7 @@ KNN is called lazy learning because it does not build a model during training. I
 3.Why is feature scaling important in this dataset?
 Feature scaling ensures that all variables contribute equally to distance calculations. Without scaling, one feature could dominate the result and reduce prediction accuracy.
 
-##Challenges Encountered
+## Challenges Encountered
 
 One challenge was understanding how KNN calculates similarity using multiple features at once. It was also difficult to see how different values of k affect prediction stability. After testing, it became clear that smaller k values are more sensitive to noise, while larger k values produce smoother but less responsive predictions.
+
