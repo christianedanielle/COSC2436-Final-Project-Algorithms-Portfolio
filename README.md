@@ -6,11 +6,11 @@ algorithms in Python. Each chapter folder contains the working program files
 plus a written lab report.
 
 ## Author
-[Your Name] - COSC 2436, [Semester Year]
+Christiane Danielle Sidje Domche- COSC 2436, 2026
 
 ## Description
-[2-3 sentences describing what the portfolio covers and your goals for the
-semester.]
+This portfolio contains the labs and programming assignments completed throughout the semester in COSC 2436. Each chapter focuses on a different data structure or algorithm implemented in Python, including searching, sorting, recursion, trees, graph algorithms, and dynamic programming. The purpose of this project is to build a stronger understanding of algorithm design, problem-solving, and computational efficiency through hands-on practice and analysis.
+
 
 ## Repository Structure
 | Folder | Topic                                              |
@@ -45,4 +45,4 @@ and run the main file:
 
 ## Course
 COSC 2436 - Programming Fundamentals III (Data Structures and Algorithms),
-[Semester Year], based on *Grokking Algorithms* by Aditya Bhargava.
+2026, based on *Grokking Algorithms* by Aditya Bhargava.
