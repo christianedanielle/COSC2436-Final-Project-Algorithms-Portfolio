@@ -11,9 +11,6 @@ Chapter 1: [Binary Search] — Lab Report
 Binary Search: O(log n)
 - **When to use it:**Use linear search for small or unsorted datasets. Use binary search when the data is sorted and you need faster performance on larger datasets.
 
-## Test Results
-[Paste your program output, measurement table, or sample run.
- Use a Markdown table where appropriate.]
 
 ## Test Results
 
