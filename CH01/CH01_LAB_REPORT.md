@@ -38,4 +38,5 @@ Binary search only works on sorted data. If the data is not sorted, it must be s
 As the input size increases, linear search time grows directly with the number of elements. Binary search grows much more slowly because it depends on the logarithm of the input size, making it much more scalable.
 
 ## Challenges Encountered
+One challenge in this lab was understanding how binary search repeatedly divides the list and updates the search boundaries. It was important to carefully track the low, high, and middle indexes to avoid infinite loops or incorrect results. Another challenge was comparing the performance of linear search and binary search fairly, since binary search only works on sorted data. Testing different input values helped demonstrate the differences in efficiency and reinforced the importance of choosing the correct algorithm for a specific situation.
 
