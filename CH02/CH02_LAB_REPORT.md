@@ -1,4 +1,4 @@
-# Chapter 11: Selection Sort — Lab Report
+# Chapter 02: Selection Sort — Lab Report
  **Name:** Christiane Danielle
 - **Date:** 02-05-2026
 
@@ -26,3 +26,7 @@ You would choose a linked list when you need frequent insertions or deletions, e
 
 3. Why does Python use arrays (lists) as the default sequence type?
 Python uses lists as the default sequence type because they are flexible, dynamic, and easy to use for storing collections of items of varying sizes and types.
+
+## Challenges Encountered
+
+One challenge encountered in this lab was understanding how selection sort repeatedly searches through the unsorted portion of the list to find the smallest value. Tracing each pass of the algorithm required careful attention to how elements were compared and swapped. Another challenge was comparing arrays and linked lists, especially understanding why some operations are faster in one structure than the other. Practicing with examples and analyzing the time complexity of each operation helped strengthen my understanding of how data structures affect program performance.
