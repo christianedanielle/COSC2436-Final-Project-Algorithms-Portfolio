@@ -1,4 +1,4 @@
-# Lab 04: Quicksort
+# Lab 04: Quicksort -Lab Report
 
 ## Student Information
 - **Name:** Christiane Danielle
@@ -58,5 +58,10 @@ Quicksort uses **divide-and-conquer** by breaking the array into smaller subarra
 3. **How does quicksort compare to other sorting algorithms you know (e.g., bubble sort, merge sort)?**  
    - Quicksort is usually much faster than bubble sort (O(n²)) and similar to merge sort (O(n log n)). Unlike merge sort, it can sort in place with minimal extra memory.
 
-4. **Why do we use `array[1:]` instead of `array` when building the less and greater lists?**  
-   - `array[1:]` excludes the pivot. Including the pivot in the partitions would duplicate it and break the algorithm.
+4.**why do we use array[1:] instead of array when building the less and greater lists?**
+
+We use array[1:] to exclude the pivot element because the pivot is already handled separately in the algorithm. If the full array were used, the pivot could be included again in either the less or greater list, which would create duplicate values and lead to incorrect sorting results in the final output.
+
+   ##  Challenges Encountered
+
+One challenge in this lab was understanding how quicksort repeatedly divides the array into smaller partitions around the pivot element. Tracing the recursive calls step by step was necessary to see how the algorithm eventually combines the sorted subarrays into one fully sorted list. Another challenge was understanding how pivot selection affects performance, especially why choosing the first element in an already sorted array can lead to worst-case O(n²) time complexity. Working through examples by hand helped clarify the divide-and-conquer process and the flow of recursion in the algorithm.
